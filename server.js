@@ -13,7 +13,7 @@ const SERVER_IP = "barkadacraftsmp.ph1-mczie.fun:4090";
 // API route
 app.get('/server-status', async (req, res) => {
   try {
-    const response = await fetch(`https://api.mcsrvstat.us/2/${SERVER_IP}`);
+    const response = await fetch(`https://api.mcstatus.io/v2/status/java/${SERVER_IP}`);
     const data = await response.json();
 
     res.json({
